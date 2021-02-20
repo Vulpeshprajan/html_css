@@ -1,0 +1,39 @@
+p {
+    color: white;
+    background-color: rgb(0, 0, 0);
+
+}
+
+#user {
+    background:rgb(0, 0, 0);
+    color: green;
+}
+
+.user-info {
+    font-size: large;
+}
+
+section {
+    background-color:white;
+
+}
+div p {
+    color: indianred;
+    background-color:blueviolet;
+}
+div > p {
+    color:antiquewhite
+}
+
+div + p {
+    background-color:aqua;
+
+}
+
+div ~ p {
+    font-weight: bold;
+}
+
+[href="about us.html"] {
+    background: tomato;
+}
