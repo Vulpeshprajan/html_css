@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+nav {
+  background: rgb(209, 197, 197);
+  display: flex;
+  justify-content: space-between;
+  margin: 0px, 20px, 0px, 20px;
+  transition: all 1s;
+}
+
+nav:hover {
+  color: red;
+}
+
+nav ul {
+  list-style: none;
+  font-size: large;
+}
+
+a {
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: grey;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+
+a:hover {
+  color: black;
+  transform: scale(1.2);
+}
+
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin-right: 20px;
+}
+/* Main page */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background-color: white;
+  padding: 20px;
+}
+/* Footer */
+footer {
+  padding: 20px;
+  color: white;
+  background-color: rgb(48, 33, 33);
+  height: 100px;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+}
+
+/* main h1 */
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3em;
+  border-bottom: 2px solid pink;
+  border-right: 2px solid pink;
+  border-radius: 2px solid pink;
+  width: 400px;
+  text-align: center;
+  box-shadow: 4px 4px 5px black;
+  transition: all 1s;
+}
+
+h1:hover {
+  transform: scale(1.2);
+}
+
+/* main image  */
+img {
+  width: 450px;
+  height: 300px;
+  margin: 10px;
+  transition: all 1s;
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+
+.article-list-item {
+  display: flex;
+  flex-direction: row;
+  background-color: lightcyan;
+  border: lightseagreen solid 0.5em;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  border-radius: 3%;
+}
+
+.thumnail {
+  margin-right: 20px;
+  margin-top: 15px;
+}
+
+aside {
+  background-color: lightgray;
+  width: 30%;
+  height: 100%;
+  padding: 15px;
+}
+
+.main-page-content {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Media query */
+@media (max-width: 768px) {
+  .main-page-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  aside {
+    background-color: lightgray;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .article-list-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .thumnail {
+    width: 250px;
+    height: auto;
+    margin-right: 20px;
+    margin-top: 15px;
+  }
+
+  .thumnail img {
+    width: 350px;
+  }
+  footer {
+    margin-top: 20px;
+  }
+}
